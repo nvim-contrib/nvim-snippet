@@ -2,7 +2,7 @@
 
 A collection of snippets for different programming languages.
 
-### Usage
+## Usage
 
 You can install the snippets with [lazy.nvim](https://github.com/folke/lazy.nvim):
 
@@ -10,7 +10,7 @@ You can install the snippets with [lazy.nvim](https://github.com/folke/lazy.nvim
 {
   "L3MON4D3/LuaSnip",
   dependencies = {
-    "nvim-extensions/nvim-snippets",
+    "nvim-contrib/nvim-snippets",
   },
-},
+}
 ```

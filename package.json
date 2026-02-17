@@ -1,5 +1,5 @@
 {
-  "name": "nvim-snippets",
+  "name": "nvim-snippet",
   "engines": {
     "vscode": "^1.11.0"
   },

@@ -32,7 +32,7 @@
   "Befa": {
     "prefix": ["Befa", "befa"],
     "body": "BeforeAll(func() {\n    $0\n})",
-    "description": "Ginkgo BeforeSuite",
+    "description": "Ginkgo BeforeAll",
     "scope": "source.go"
   },
   "By": {
@@ -49,7 +49,7 @@
   },
   "Cons": {
     "prefix": ["Cons", "cons"],
-    "body": "Consistently(${1}).Should$3(${4:Equal}($5))",
+    "body": "Consistently(${1}).Should$2(${3:Equal}($4))",
     "description": "Gomega Consistently",
     "scope": "source.go"
   },
@@ -67,7 +67,7 @@
   },
   "Desct": {
     "prefix": ["Desct", "desct"],
-    "body": "DescribeTable(\"$1\", func($2) {\n    $5\n},\n Entry(\"$3\", $4),\n)",
+    "body": "DescribeTable(\"$1\", func($2) {\n    $5\n},\n    Entry(\"$3\", $4),\n)",
     "description": "Ginkgo Describe Table",
     "scope": "source.go"
   },
@@ -85,7 +85,7 @@
   },
   "Ev": {
     "prefix": ["Ev", "ev"],
-    "body": "Eventually(${1}).Should$3(${4:Equal}($5))",
+    "body": "Eventually(${1}).Should$2(${3:Equal}($4))",
     "description": "Gomega Eventually",
     "scope": "source.go"
   },
@@ -127,7 +127,7 @@
   },
   "Syncafts": {
     "prefix": ["Syncafts", "syncafts"],
-    "body": "SynchronizedAfterSuite(func() {\n    ${0://runs on all nodes}\n}, func() {\n    ${1://runs on node 1}\n})",
+    "body": "SynchronizedAfterSuite(func() {\n    ${1://runs on all nodes}\n}, func() {\n    ${0://runs on node 1}\n})",
     "description": "Ginkgo SynchronizedAfterSuite",
     "scope": "source.go"
   },
@@ -144,19 +144,19 @@
     "scope": "source.go"
   },
   "Ω": {
-    "prefix": "Ω",
+    "prefix": ["Ω"],
     "body": "Ω($1).Should$2(${3:Equal}($4))",
     "description": "Gomega Ω",
     "scope": "source.go"
   },
   "Ωerr": {
-    "prefix": "Ωerr",
+    "prefix": ["Ωerr"],
     "body": "Ω(${1:err}).ShouldNot(HaveOccurred())",
     "description": "Gomega Error Ω",
     "scope": "source.go"
   },
   "Ωs": {
-    "prefix": "Ωs",
+    "prefix": ["Ωs"],
     "body": "Ω(${1:Func()}).Should(Succeed())",
     "description": "Gomega Succeed Ω",
     "scope": "source.go"

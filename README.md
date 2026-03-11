@@ -10,14 +10,14 @@ You can install the snippets with [lazy.nvim](https://github.com/folke/lazy.nvim
 {
   "L3MON4D3/LuaSnip",
   dependencies = {
-    "nvim-contrib/nvim-snippets",
+    "nvim-contrib/nvim-snippet",
   },
   config = function(plugin, opts)
     -- include the default astronvim config that calls the setup call
     require "astronvim.plugins.configs.luasnip"(plugin, opts)
     -- load snippets paths
     require("luasnip.loaders.from_vscode").lazy_load {
-      paths = { vim.fn.stdpath "data" .. "/lazy/nvim-snippets" },
+      paths = { vim.fn.stdpath "data" .. "/lazy/nvim-snippet" },
     }
   end,
 }

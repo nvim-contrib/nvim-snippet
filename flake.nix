@@ -13,6 +13,7 @@
       in
       {
         devShells.default = pkgs.mkShell {
+          name = "nvim-snippets";
           packages = with pkgs; [
             jq
           ];

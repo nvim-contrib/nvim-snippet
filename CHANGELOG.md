@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/nvim-contrib/nvim-snippets/compare/v0.2.1...v0.2.2) (2026-05-04)
+
+
+### Bug Fixes
+
+* **github:** correct action versions in update.yml ([821c5e6](https://github.com/nvim-contrib/nvim-snippets/commit/821c5e610d9cdc915d6e2c95f7116f7862e0852d))
+
 ## [0.2.1](https://github.com/nvim-contrib/nvim-snippets/compare/v0.2.0...v0.2.1) (2026-04-11)
 
 
